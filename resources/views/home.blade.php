@@ -1,5 +1,10 @@
 @extends('layout')
 
+<?php
+setlocale(LC_ALL, 'NL_nl');
+date_default_timezone_set('Europe/Amsterdam'); 
+?>
+
 @section('nav')
     <nav>
         <div class="logo">
@@ -15,13 +20,19 @@
 @endsection
 
 @section('content')
-    {{ setlocale(LC_ALL, 'NL_nl') }}
-    {{ $local = date_default_timezone_get() }}
-    {{ date_default_timezone_set($local) }}
-
     <div class="datetime-container">
         <h1>{{ strftime('%A') }}</h1>
         <h1>{{ strftime('%d %B') }}</h1>
         <h2><span>{{ strftime('%H') }}</span>:<span>{{ strftime('%M') }}</span></h2>
+    </div>
+@endsection
+
+@section('footer')
+    <h1>CodeCamp &copy; 2021</h1>
+    <div class="footer-contact-links">
+        <a href="">Email</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+        <a href="">076 4812 28</a>
     </div>
 @endsection
