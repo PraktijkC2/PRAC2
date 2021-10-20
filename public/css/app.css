@@ -100,36 +100,43 @@ footer .footer-contact-links a{
     display:flex;
 }
 .songs{
-    background:lightgrey;
-    margin:15px;
+    background:black;
+    margin-right:30px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    padding:110px;
 }
 .films{
-    background:lightgrey;
-    margin:15px;
+    background:black;
+    margin-right:30px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    padding:110px;
 }
 .books{
-    background:lightgrey;
-    margin:15px;
+    background:black;
+    margin-right:30px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    padding:110px;
 }
 .actors{
-    background:lightgrey;
-    margin:15px;
+    background:black;
+    margin-right:30px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    padding:110px;
 }
 .container-themas a{
     font-size: 12px;
     list-style-type: none;
     text-decoration: none;
     color:white;
+}
+.container-themas h1{
+    color:White;
 }
