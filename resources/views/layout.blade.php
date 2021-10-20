@@ -19,13 +19,29 @@
     <body>
         <div class="wrapper">
             <header>
-                @yield('nav')
+                <nav>
+                    <div class="logo">
+                            <h1>code<<camp><i class="fas fa-campground"></i>></h1>
+                    </div>
+                    <div class="links-nav">
+                        <a href="/" class="active"><i class="fas fa-home"></i> Homepagina</a>
+                        <a href="/library"><i class="fas fa-book-reader"></i> My Library</a>
+                        <a href="/informatie"><i class="far fa-question-circle"></i> Informatie</a>
+                        <a href="/stakeholders"><i class="fas fa-hands-helping"></i> Stakeholders</a>
+                    </div>
+                </nav>
             </header>
             <main>
                 @yield('content')
             </main>
             <footer>
-                @yield('footer')
+            <h1>CodeCamp &copy; 2021</h1>
+                <div class="footer-contact-links">
+                    <a href=""><i class="fas fa-envelope-square"></i> Email</a>
+                    <a href=""><i class="fab fa-twitter-square"></i> Twitter</a>
+                    <a href=""><i class="fas fa-hashtag"></i> Instagram</a>
+                    <a href=""><i class="fas fa-phone-square-alt"></i> 076 4812 28</a>
+                </div>
             </footer>
         </div>
     </body>
