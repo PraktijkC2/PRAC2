@@ -29,6 +29,7 @@ date_default_timezone_set('Europe/Amsterdam');
 
 @section('footer')
     <h1>CodeCamp &copy; 2021</h1>
+    <h1>Koestraat 1, 's-Hertogenbosch</h1>
     <div class="footer-contact-links">
         <a href=""><i class="fas fa-envelope-square"></i> Email</a>
         <a href=""><i class="fab fa-twitter-square"></i> Twitter</a>
