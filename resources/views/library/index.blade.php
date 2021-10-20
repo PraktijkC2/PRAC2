@@ -3,11 +3,9 @@
 @section('content')
 
         <div class="container-themas">
-
             <div class="songs">
 
                 <h1>Songs</h1>
-
                 <img src="" alt="">
 
                 <a href="">Bohemian Rapshody</a>
@@ -21,7 +19,6 @@
                 <a href="">Transylvia</a>
 
                 <a href="">We are the champions</a>
-
             </div>
 
             <div class="films">
@@ -32,7 +29,7 @@
                 <a href="">James Bond Films</a>
             </div>
 
-            <div class="film-personages">
+            <div class="actors">
 
                 <h1>Actors</h1>
 

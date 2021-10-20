@@ -95,3 +95,41 @@ footer .footer-contact-links a{
     font-weight: 600;
     letter-spacing: 0.05rem;
 }
+/* library css semir */
+.container-themas{
+    display:flex;
+}
+.songs{
+    background:lightgrey;
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.films{
+    background:lightgrey;
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.books{
+    background:lightgrey;
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.actors{
+    background:lightgrey;
+    margin:15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.container-themas a{
+    font-size: 12px;
+    list-style-type: none;
+    text-decoration: none;
+    color:white;
+}
