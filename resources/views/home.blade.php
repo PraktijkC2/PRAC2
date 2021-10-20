@@ -30,9 +30,9 @@ date_default_timezone_set('Europe/Amsterdam');
 @section('footer')
     <h1>CodeCamp &copy; 2021</h1>
     <div class="footer-contact-links">
-        <a href="">Email</a>
-        <a href="">Twitter</a>
-        <a href="">Instagram</a>
-        <a href="">076 4812 28</a>
+        <a href=""><i class="fas fa-envelope-square"></i> Email</a>
+        <a href=""><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href=""><i class="fas fa-hashtag"></i> Instagram</a>
+        <a href=""><i class="fas fa-phone-square-alt"></i> 076 4812 28</a>
     </div>
 @endsection
