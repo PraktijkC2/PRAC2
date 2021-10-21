@@ -140,3 +140,17 @@ footer .footer-contact-links a{
 .container-themas h1{
     color:White;
 }
+
+.map-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.extra-info h2{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.extra-info p{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
