@@ -8,7 +8,6 @@
 				<div class="content">
 				<h2>Songs</h2>
 				<p> Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Numquam cumque rerum saepe est similique aspernatur fugit ab repudiandae aperiam. </p>
-				<a href="#"> Read More </a>
 		 </div>
 	   </div>
 	</div> 	
@@ -17,7 +16,6 @@
 				<div class="content">
 				<h2>Films</h2>
 				<p> Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Numquam cumque rerum saepe est similique aspernatur fugit ab repudiandae aperiam. </p>
-				<a href="#"> Read More </a>
 		 </div>
 	   </div>
 	</div>
@@ -26,7 +24,6 @@
 				<div class="content">
 				<h2>Actors</h2>
 				<p> Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Numquam cumque rerum saepe est similique aspernatur fugit ab repudiandae aperiam. </p>
-				<a href="#"> Read More </a>
 		 </div>
 	   </div>
 	</div>
@@ -35,7 +32,6 @@
 				<div class="content">
 				<h2>Books</h2>
 				<p> Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Numquam cumque rerum saepe est similique aspernatur fugit ab repudiandae aperiam. </p>
-				<a href="#"> Read More </a>
   </div>
 
 
