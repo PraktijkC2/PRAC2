@@ -192,6 +192,7 @@ footer .footer-contact-links a{
 .map-div{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .extra-info h2{
