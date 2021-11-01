@@ -164,10 +164,6 @@ footer .footer-contact-links a{
     border-top: 5px solid hsl(212, 86%, 64%);
 }
 
-.library > .purple{
-    color:hsl(306, 62%, 55%);
-}
-
 .cyan a{
     color:hsl(180, 62%, 55%);
 }
