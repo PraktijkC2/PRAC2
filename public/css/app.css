@@ -337,3 +337,38 @@ footer .footer-contact-links a{
     font-size: 20px;
 
 }
+
+/* Ilyas - 01-11-2021 */
+                       
+.height-fix{
+	display: flex;
+}
+
+.height-fix>.boxe{
+	flex: 1;
+	min-height: 300px;
+}
+
+.boxe {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+    padding: 30px;
+    margin: 20px;
+	font-size: 15px; 
+}
+
+.boxe a{
+	display: flex;
+	padding: 10px 0 10px 0;
+	text-decoration: none;
+}
+
+.cyan {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.red {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.blue {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
