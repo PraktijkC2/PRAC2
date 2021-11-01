@@ -24,9 +24,9 @@
                             <h1>code<<camp><i class="fas fa-campground"></i>></h1>
                     </div>
                     <div class="links-nav">
-                        <a href="/" class="active"><i class="fas fa-home"></i> Homepagina</a>
-                        <a href="/library"><i class="fas fa-book-reader"></i> My Library</a>
-                        <a href="/informatie"><i class="far fa-question-circle"></i> Informatie</a>
+                        <a style="margin-right: 5px;" href="/" class="active"><i class="fas fa-home"></i> Homepagina</a>
+                        <a style="margin-right: 5px;" href="/library"><i class="fas fa-book-reader"></i> My Library</a>
+                        <a style="margin-right: 5px;" href="/informatie"><i class="far fa-question-circle"></i> Informatie</a>
                         <a href="/stakeholders"><i class="fas fa-hands-helping"></i> Stakeholders</a>
                     </div>
                 </nav>

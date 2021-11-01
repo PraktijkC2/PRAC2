@@ -36,7 +36,6 @@ nav > .links-nav a{
     color: white;
     font-size: 16px;
     font-weight: 500;
-    margin-right: 5px;
     text-decoration: none;
     letter-spacing: 0.03rem;
     padding: 5px 10px;
@@ -95,73 +94,80 @@ footer .footer-contact-links a{
     font-weight: 600;
     letter-spacing: 0.05rem;
 }
-/* library css semir */
-
 
 .purple{
     border-top: 3px solid hsl(306, 62%, 55%);
 }
 
 .map-div{
-
     display: flex;
-
     justify-content: space-between;
-    margin-top: 50px;
-
 }
 
-
-
 .extra-info h2{
-
-    padding-bottom: 10px;
-
     font-size: 30px;
-
 }
 
 .extra-info p{
-
-    padding-bottom: 10px;
-
     font-size: 20px;
-
 }
 
 /* Ilyas - 01-11-2021 */
-                       
-.height-fix{
+ /* Mohamed - 01-11-2021  */
+
+.stakeholders, .library{
 	display: flex;
 }
 
-.height-fix>.boxe{
-	flex: 1;
-	min-height: 300px;
+.stakeholders > .box, .library > .box{
+    flex: 1;
+	min-height: auto;
 }
 
-.boxe {
+.stakeholders .box, .library .box {
     border-radius: 5px;
-    box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
-    padding: 30px;
-    margin: 20px;
-	font-size: 15px; 
+    padding: 20px 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.boxe a{
+.stakeholders > .box a, .library > .box a{
 	display: flex;
-	padding: 10px 0 10px 0;
-	text-decoration: none;
+    font-size: 15px;
+    padding: 5px 0px;
+    margin-right: 5px;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
 }
-.cyan {
-    border-top: 3px solid hsl(180, 62%, 55%);
+
+.stakeholders > .box h2, .library > .box h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
 }
-.red {
-    border-top: 3px solid hsl(0, 78%, 62%);
+
+.stakeholders> .cyan, .library > .cyan {
+    margin-right: 20px;
+    border-top: 5px solid hsl(180, 62%, 55%);
 }
-.blue {
-    border-top: 3px solid hsl(212, 86%, 64%);
+.stakeholders > .red, .library > .red {
+    margin-right: 20px;
+    border-top: 5px solid hsl(0, 78%, 62%);
 }
+
+.stakeholders > .blue {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.library > .blue {
+    margin-right: 20px;
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.library > .purple{
+    color:hsl(306, 62%, 55%);
+}
+
 .cyan a{
     color:hsl(180, 62%, 55%);
 }

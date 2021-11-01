@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-    <div class="wrapper">
         <div class="">
             <h1>Informatie</h1>
         </div>
@@ -22,5 +21,4 @@
             </div>
             
         </div>
-    </div>
 @endsection

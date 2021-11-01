@@ -1,8 +1,9 @@
 @extends('layout')
 
 @section('content')
-<div class="container height-fix">
-    <div class="boxe cyan">
+<div class="container stakeholders">
+    
+    <div class="box cyan">
         <h2>Gereedschap</h2>
         <a href="#">Cirkelzaag</a>
         <a href="#">Kettingzaag</a>
@@ -12,13 +13,13 @@
         <a href="#">Handzagen</a>
     </div>
 
-    <div class="boxe red">
+    <div class="box red">
         <h2>Dranken</h2>
         <a href="#">Frisdrank</a> 
         <a href="#">Warme dranken</a>
     </div>
 
-    <div class="boxe blue">
+    <div class="box blue">
         <h2>Extern website</h2>
         <a href="https://github.com/PraktijkC2/PRAC2" target="_blank">Code referenrences</a> 
         <a href="https://github.com/PraktijkC2/PRAC2/projects/1" target="_blank">Kanban board</a> 
