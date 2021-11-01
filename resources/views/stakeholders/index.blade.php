@@ -25,8 +25,8 @@
         <a href="https://www.imdb.com/" target="_blank">IMDB</a> 
         <a href="https://www.videoland.com/nl/" target="_blank">VideoLand</a> 
         <a href="https://www.themovies.nl/" target="_blank">The Movies</a> 
-
     </div>
+
 
 </div>
 @endsection
