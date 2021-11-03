@@ -27,7 +27,7 @@
                         <a style="margin-right: 5px;" href="/" class="active"><i class="fas fa-home"></i> Homepagina</a>
                         <a style="margin-right: 5px;" href="/library"><i class="fas fa-book-reader"></i> My Library</a>
                         <a style="margin-right: 5px;" href="/informatie"><i class="far fa-question-circle"></i> Informatie</a>
-                        <a href="/stakeholders"><i class="fas fa-hands-helping"></i> Stakeholders</a>
+                        <a href="/stakeholders"><i class="fas fa-coffee"></i> Producten</a>
                     </div>
                 </nav>
             </header>
