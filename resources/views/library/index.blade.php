@@ -25,7 +25,7 @@
     
 	<div class="box purple">
         <h2>Books</h2>
-        @foreach($books as $book)
+        @foreach($boeken as $boek)
             <a href="{{ route('books.index', $book->id) }}">{{ $book->name }}</a>
         @endforeach 
     </div>
