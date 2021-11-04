@@ -118,6 +118,7 @@ footer .footer-contact-links a{
 
 .stakeholders, .library{
 	display: flex;
+    margin-bottom: 300px;
 }
 
 .stakeholders > .box, .library > .box{
