@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Films;
 use App\Models\Library;
-use App\Models\Gereedschap;
 use Illuminate\Http\Request;
 
-class GereedschapController extends Controller
+class FilmsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,16 +15,15 @@ class GereedschapController extends Controller
      */
     public function index()
     {
-        $gereedschap = Gereedschap::All();
-        return view('gereedschap/index');
+        $film = Films::All();
+        return view('films/index');
     }
 
-    public function listGereedschap($id)
+    public function listFilm($id)
     {
-        $gereedschap = Gereedschap::where('id', $id)->first();
-        return view('gereedschap.index', compact('gereedschap'));
+        $film = Films::where('id', $id)->first();
+        return view('films.index', compact('films'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -49,10 +48,10 @@ class GereedschapController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Gereedschap  $gereedschap
+     * @param  \App\Models\Films  $films
      * @return \Illuminate\Http\Response
      */
-    public function show(Gereedschap $gereedschap)
+    public function show(Films $films)
     {
         //
     }
@@ -60,10 +59,10 @@ class GereedschapController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Gereedschap  $gereedschap
+     * @param  \App\Models\Films  $films
      * @return \Illuminate\Http\Response
      */
-    public function edit(Gereedschap $gereedschap)
+    public function edit(Films $films)
     {
         //
     }
@@ -72,10 +71,10 @@ class GereedschapController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Gereedschap  $gereedschap
+     * @param  \App\Models\Films  $films
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Gereedschap $gereedschap)
+    public function update(Request $request, Films $films)
     {
         //
     }
@@ -83,10 +82,10 @@ class GereedschapController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Gereedschap  $gereedschap
+     * @param  \App\Models\Films  $films
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Gereedschap $gereedschap)
+    public function destroy(Films $films)
     {
         //
     }

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Boeken;
 use App\Models\Library;
-use App\Models\Gereedschap;
 use Illuminate\Http\Request;
 
-class GereedschapController extends Controller
+class BoekenController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,16 +15,15 @@ class GereedschapController extends Controller
      */
     public function index()
     {
-        $gereedschap = Gereedschap::All();
-        return view('gereedschap/index');
+        $boeken = Boeken::all();
+        return view('books/index');
     }
 
-    public function listGereedschap($id)
+    public function listBoek($id)
     {
-        $gereedschap = Gereedschap::where('id', $id)->first();
-        return view('gereedschap.index', compact('gereedschap'));
+        $boeken = Boeken::where('id', $id)->first();
+        return view('books.index', compact('boeken'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -49,10 +48,10 @@ class GereedschapController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Gereedschap  $gereedschap
+     * @param  \App\Models\Boeken  $boeken
      * @return \Illuminate\Http\Response
      */
-    public function show(Gereedschap $gereedschap)
+    public function show(Boeken $boeken)
     {
         //
     }
@@ -60,10 +59,10 @@ class GereedschapController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Gereedschap  $gereedschap
+     * @param  \App\Models\Boeken  $boeken
      * @return \Illuminate\Http\Response
      */
-    public function edit(Gereedschap $gereedschap)
+    public function edit(Boeken $boeken)
     {
         //
     }
@@ -72,10 +71,10 @@ class GereedschapController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Gereedschap  $gereedschap
+     * @param  \App\Models\Boeken  $boeken
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Gereedschap $gereedschap)
+    public function update(Request $request, Boeken $boeken)
     {
         //
     }
@@ -83,10 +82,10 @@ class GereedschapController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Gereedschap  $gereedschap
+     * @param  \App\Models\Boeken  $boeken
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Gereedschap $gereedschap)
+    public function destroy(Boeken $boeken)
     {
         //
     }

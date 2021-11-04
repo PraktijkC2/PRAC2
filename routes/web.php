@@ -27,7 +27,20 @@ Route::get('/informatie', [InformatieController::class, 'index'])->name('informa
 
 Route::get('/stakeholders', [StakeholdersController::class, 'index'])->name('stakeholders.index');
 
+Route::get('/songs', [SongsController::class, 'index'])->name('songs.index');
+Route::get('/songs/{songs}', [SongsController::class, 'listSong'])->name('songs.index');
+
+Route::get('/books', [BoekenController::class, 'index'])->name('books.index');
+Route::get('/books/{book}', [GereedschapController::class, 'listBoek'])->name('books.index');
+
+Route::get('/actors', [ActorsController::class, 'index'])->name('actors.index');
+Route::get('/actors/{actor}', [GereedschapController::class, 'listActor'])->name('actors.index');
+
+Route::get('/films', [FilmsController::class, 'index'])->name('films.index');
+Route::get('/films/{film}', [GereedschapController::class, 'listFilm'])->name('films.index');
+
 Route::get('/gereedschap', [GereedschapController::class, 'index'])->name('gereedschap.index');
+Route::get('/gereedschap/{gereedschap}', [GereedschapController::class, 'listGereedschap'])->name('gereedschap.index');
 
 Route::get('/dranken', [DrankenController::class, 'index'])->name('dranken.index');
 

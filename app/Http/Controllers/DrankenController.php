@@ -14,6 +14,7 @@ class DrankenController extends Controller
      */
     public function index()
     {
+        $dranken = Dranken::all();
         return view('dranken/index');
     }
 
