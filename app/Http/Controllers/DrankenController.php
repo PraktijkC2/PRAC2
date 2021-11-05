@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Dranken;
+use App\Models\Stakeholders;
 use Illuminate\Http\Request;
 
 class DrankenController extends Controller
@@ -16,6 +17,12 @@ class DrankenController extends Controller
     {
         $dranken = Dranken::all();
         return view('dranken/index');
+    }
+
+    public function listDranken($id)
+    {
+        $dranken = Dranken::where('id', $id)->first();
+        return view('dranken.index', compact('dranken'));
     }
 
     /**

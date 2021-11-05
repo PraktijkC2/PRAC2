@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Library;
 use App\Models\Gereedschap;
+use App\Models\Stakeholders;
 use Illuminate\Http\Request;
 
 class GereedschapController extends Controller

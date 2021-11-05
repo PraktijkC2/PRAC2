@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="">
-        {{ $gereedschap->name }}
-        {{ $gereedschap->description }}
+        {{ $boeken->titel }}
+        {{ $boeken->omschrijving }}
     </div>
 @endsection

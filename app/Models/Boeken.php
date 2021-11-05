@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Boeken extends Model
 {
+    public $table = "boeken";
     use HasFactory;
 
     public function library()

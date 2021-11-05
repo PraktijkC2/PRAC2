@@ -15,13 +15,13 @@ class FilmsController extends Controller
      */
     public function index()
     {
-        $film = Films::All();
+        $films = Films::All();
         return view('films/index');
     }
 
     public function listFilm($id)
     {
-        $film = Films::where('id', $id)->first();
+        $films = Films::where('id', $id)->first();
         return view('films.index', compact('films'));
     }
     /**

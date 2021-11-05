@@ -2,7 +2,8 @@
 
 @section('content')
     <div class="">
-        {{ $gereedschap->name }}
-        {{ $gereedschap->description }}
+        {{ $films->titel }}
+        {{ $films->director }}
+        {{ $films->samenvatting }}
     </div>
 @endsection

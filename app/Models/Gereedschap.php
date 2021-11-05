@@ -7,12 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Gereedschap extends Model
 {
+    public $table = "gereedschap";
     use HasFactory;
-    
-    public function library()
-    {
-        return $this->belongsTo(Library::class);
-    }
 
     public function stakeholders()
     {
