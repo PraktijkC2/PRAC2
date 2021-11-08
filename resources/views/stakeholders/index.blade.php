@@ -2,20 +2,19 @@
 
 @section('content')
 <div class="container stakeholders">
-    
+      
     <div class="box cyan">
         <h2>Gereedschap</h2>
-        <a href="#">Cirkelzaag</a>
-        <a href="#">Hamer</a>
-        <a href="#">Beitel</a>
-        <a href="#">Schroevendraaiers</a>
-        <a href="#">Handzagen</a>
+        @foreach($gereedschap as $grdschap)
+            <a href="{{ route('gereedschap.index', $grdschap->id) }}">{{ $grdschap->name }}</a>
+        @endforeach 
     </div>
 
     <div class="box red">
         <h2>Dranken</h2>
-        <a href="#">Frisdrank</a> 
-        <a href="#">Warme dranken</a>
+        @foreach($dranken as $drank)
+            <a href="{{ route('dranken.index', $drank->id) }}">{{ $drank->name }}</a>
+        @endforeach 
     </div>
 </div>
 @endsection

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gereedschap;
+use App\Models\Stakeholders;
 use Illuminate\Http\Request;
 
 class GereedschapController extends Controller
@@ -14,7 +15,14 @@ class GereedschapController extends Controller
      */
     public function index()
     {
+        $gereedschap = Gereedschap::All();
         return view('gereedschap/index');
+    }
+
+    public function listGereedschap($id)
+    {
+        $gereedschap = Gereedschap::where('id', $id)->first();
+        return view('gereedschap.index', compact('gereedschap'));
     }
 
     /**

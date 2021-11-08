@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Dranken;
-use App\Models\Stakeholders;
+use App\Models\Songs;
+use App\Models\Library;
 use Illuminate\Http\Request;
 
-class DrankenController extends Controller
+class SongsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,16 +15,15 @@ class DrankenController extends Controller
      */
     public function index()
     {
-        $dranken = Dranken::all();
-        return view('dranken/index');
+        $songs = Songs::all();
+        return view('songs/index');
     }
 
-    public function listDranken($id)
+    public function listSong($id)
     {
-        $dranken = Dranken::where('id', $id)->first();
-        return view('dranken.index', compact('dranken'));
+        $songs = Songs::where('id', $id)->first();
+        return view('songs.index', compact('songs'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -49,10 +48,10 @@ class DrankenController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Songs  $songs
      * @return \Illuminate\Http\Response
      */
-    public function show(Dranken $dranken)
+    public function show(Songs $songs)
     {
         //
     }
@@ -60,10 +59,10 @@ class DrankenController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Songs  $songs
      * @return \Illuminate\Http\Response
      */
-    public function edit(Dranken $dranken)
+    public function edit(Songs $songs)
     {
         //
     }
@@ -72,10 +71,10 @@ class DrankenController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Songs  $songs
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Dranken $dranken)
+    public function update(Request $request, Songs $songs)
     {
         //
     }
@@ -83,10 +82,10 @@ class DrankenController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Songs  $songs
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Dranken $dranken)
+    public function destroy(Songs $songs)
     {
         //
     }

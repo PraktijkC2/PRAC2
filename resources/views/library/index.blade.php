@@ -4,30 +4,30 @@
 <div class="container library">
     <div class="box cyan">
         <h2>Songs</h2>
-        <a href="#">Bohemian Rhapsody</a> 
-        <a href="#">Madness</a> 
-        <a href="#">Uprising</a> 
-        <a href="#">Plug in Baby</a> 
-        <a href="#">We are the champions!</a> 
+        @foreach($songs as $song)
+            <a href="{{ route('songs.index', $song->id) }}">{{ $song->artiest }} - {{ $song->songname }}</a>
+        @endforeach 
     </div>
 
     <div class="box red">
-        <h2>Films</h2>
-        <a href="#">James Bond</a> 
+    <h2>Films</h2>
+        @foreach($films as $film)
+            <a href="{{ route('films.index', $film->id) }}">{{ $film->titel }}</a>
+        @endforeach 
     </div>
 
     <div class="box blue">
         <h2>Actors</h2>
-        <a href="#" target="_blank">George Clooney</a> 
-        <a href="#" target="_blank">Darth Vader</a>  
-        <a href="#" target="_blank">Timoty Dalton</a> 
-        <a href="#" target="_blank">Luke Skywalker</a>  
-
+        @foreach($actors as $actor)
+            <a href="{{ route('actors.index', $actor->id) }}">{{ $actor->voornaam }} {{ $actor->achternaam }}</a>
+        @endforeach 
     </div>
+    
 	<div class="box purple">
         <h2>Books</h2>
-        <a href="#">The Greatest</a> 
-        <a href="#">Undisputed Truth</a> 
+        @foreach($boeken as $boek)
+            <a href="{{ route('books.index', $boek->id) }}">{{ $boek->titel }}</a>
+        @endforeach 
     </div>
 
 </div>

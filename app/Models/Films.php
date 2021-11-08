@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Gereedschap extends Model
+class Films extends Model
 {
-    public $table = "gereedschap";
+    public $table = "films";
     use HasFactory;
 
-    public function stakeholders()
+    public function library()
     {
-        return $this->belongsTo(Stakeholders::class);
+        return $this->belongsTo(Library::class);
     }
 }

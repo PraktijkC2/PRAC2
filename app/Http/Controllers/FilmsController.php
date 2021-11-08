@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Dranken;
-use App\Models\Stakeholders;
+use App\Models\Films;
+use App\Models\Library;
 use Illuminate\Http\Request;
 
-class DrankenController extends Controller
+class FilmsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,16 +15,15 @@ class DrankenController extends Controller
      */
     public function index()
     {
-        $dranken = Dranken::all();
-        return view('dranken/index');
+        $films = Films::All();
+        return view('films/index');
     }
 
-    public function listDranken($id)
+    public function listFilm($id)
     {
-        $dranken = Dranken::where('id', $id)->first();
-        return view('dranken.index', compact('dranken'));
+        $films = Films::where('id', $id)->first();
+        return view('films.index', compact('films'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -49,10 +48,10 @@ class DrankenController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Films  $films
      * @return \Illuminate\Http\Response
      */
-    public function show(Dranken $dranken)
+    public function show(Films $films)
     {
         //
     }
@@ -60,10 +59,10 @@ class DrankenController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Films  $films
      * @return \Illuminate\Http\Response
      */
-    public function edit(Dranken $dranken)
+    public function edit(Films $films)
     {
         //
     }
@@ -72,10 +71,10 @@ class DrankenController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Films  $films
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Dranken $dranken)
+    public function update(Request $request, Films $films)
     {
         //
     }
@@ -83,10 +82,10 @@ class DrankenController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Films  $films
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Dranken $dranken)
+    public function destroy(Films $films)
     {
         //
     }

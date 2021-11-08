@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Songs;
+use App\Models\Films;
+use App\Models\Actors;
+use App\Models\Boeken;
 use App\Models\Library;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class LibraryController extends Controller
 {
@@ -14,7 +19,15 @@ class LibraryController extends Controller
      */
     public function index()
     {
-        return view('library/index');
+        $songs = Songs::all();
+        $films = Films::all();
+        $actors = Actors::all();
+        $boeken = Boeken::all();
+        return view('library/index')
+        ->with(compact('songs'))
+        ->with(compact('films'))
+        ->with(compact('actors'))
+        ->with(compact('boeken'));
     }
 
     /**

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSongtekstenTable extends Migration
+class CreateBoekenTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateSongtekstenTable extends Migration
      */
     public function up()
     {
-        Schema::create('songteksten', function (Blueprint $table) {
+        Schema::create('boeken', function (Blueprint $table) {
             $table->id();
-            $table->string('songname');
-            $table->text('songtekst');
-            $table->string('url');
+            $table->string('titel', 255);
+            $table->string('omschrijving', 255);
+            $table->string('auteur', 255);
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateSongtekstenTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('songteksten');
+        Schema::dropIfExists('boeken');
     }
 }

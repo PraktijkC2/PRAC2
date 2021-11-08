@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Dranken;
-use App\Models\Stakeholders;
+use App\Models\Actors;
+use App\Models\Library;
 use Illuminate\Http\Request;
 
-class DrankenController extends Controller
+class ActorsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,14 +15,14 @@ class DrankenController extends Controller
      */
     public function index()
     {
-        $dranken = Dranken::all();
-        return view('dranken/index');
+        $actors = Actors::all();
+        return view('actors/index');
     }
 
-    public function listDranken($id)
+    public function listActor($id)
     {
-        $dranken = Dranken::where('id', $id)->first();
-        return view('dranken.index', compact('dranken'));
+        $actors = Actors::where('id', $id)->first();
+        return view('actors.index', compact('actors'));
     }
 
     /**
@@ -49,10 +49,10 @@ class DrankenController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Actors  $actors
      * @return \Illuminate\Http\Response
      */
-    public function show(Dranken $dranken)
+    public function show(Actors $actors)
     {
         //
     }
@@ -60,10 +60,10 @@ class DrankenController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Actors  $actors
      * @return \Illuminate\Http\Response
      */
-    public function edit(Dranken $dranken)
+    public function edit(Actors $actors)
     {
         //
     }
@@ -72,10 +72,10 @@ class DrankenController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Actors  $actors
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Dranken $dranken)
+    public function update(Request $request, Actors $actors)
     {
         //
     }
@@ -83,10 +83,10 @@ class DrankenController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Dranken  $dranken
+     * @param  \App\Models\Actors  $actors
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Dranken $dranken)
+    public function destroy(Actors $actors)
     {
         //
     }

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Dranken;
+use App\Models\Gereedschap;
 use App\Models\Stakeholders;
 use Illuminate\Http\Request;
 
@@ -14,7 +16,11 @@ class StakeholdersController extends Controller
      */
     public function index()
     {
-        return view('stakeholders/index');
+        $dranken = Dranken::all();
+        $gereedschap = Gereedschap::all();
+        return view('stakeholders/index')
+        ->with(compact('dranken'))
+        ->with(compact('gereedschap'));
     }
 
     /**
