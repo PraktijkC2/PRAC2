@@ -11,7 +11,8 @@
             <div class="books-p">
                 <p>{{ $boeken->omschrijving }}</p>
             </div>
-            <h5> {{ $boeken->pages }} </h5>
+            <h5> {{ $boeken->pages }}  blz.</h5>
+            <button>Boek kopen!</button>
         </div>
     </div>
 @endsection
