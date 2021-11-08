@@ -19,6 +19,7 @@ class CreateSongsTable extends Migration
             $table->text('songtekst');
             $table->string('artiest', 255);
             $table->string('url');
+            $table->string('image');
             $table->string('achtergrond', 255);
             $table->timestamps();
         });
