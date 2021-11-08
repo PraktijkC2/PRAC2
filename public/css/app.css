@@ -232,3 +232,77 @@ footer .footer-contact-links a{
 	position:relative;
 	top:1px;
 }
+
+.song-info{
+    text-align: center;
+}
+
+.song-title{
+    margin-top: 20px;
+}
+
+.artist{
+    margin-bottom: 20px;
+    font-weight: lighter;
+    color: grey;
+    font-size: 14px;
+}
+
+.songtekst{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.songtekst p{
+    width: 30%;
+}
+
+.song-info a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.03rem;
+    padding: 5px 10px;
+    background-color: black;
+    box-shadow: 4px 4px 0 rgb(2, 2, 0 / 10%);
+}
+
+.actor-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.actor{
+    text-align: center;
+}
+
+.actor p{
+    margin-top: 2px;
+    font-weight: bolder;
+}
+
+.actor img{
+    height: 350px;
+}
+
+.actor-info{
+    width: 70%;
+    margin-left: 75px;
+}
+
+.actor-info p{
+    margin-bottom: 30px;
+}
+
+.actor-info a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.03rem;
+    padding: 5px 10px;
+    background-color: black;
+    box-shadow: 4px 4px 0 rgb(2, 2, 0 / 10%);
+}
