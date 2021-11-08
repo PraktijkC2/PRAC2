@@ -16,7 +16,7 @@ class CreateBoekenTable extends Migration
         Schema::create('boeken', function (Blueprint $table) {
             $table->id();
             $table->string('titel', 255);
-            $table->string('omschrijving');
+            $table->text('omschrijving');
             $table->string('auteur', 255);
             $table->integer('pages');
             $table->string('image');
