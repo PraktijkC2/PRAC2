@@ -16,6 +16,7 @@ class CreateDrankenTable extends Migration
         Schema::create('dranken', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('categorie');
             $table->text('description');
             $table->string('url');
             $table->timestamps();
