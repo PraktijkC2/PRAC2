@@ -18,6 +18,7 @@ class CreateActorsTable extends Migration
             $table->string('voornaam');
             $table->string('achternaam');
             $table->text('info');
+            $table->string('image');
             $table->string('url');
             $table->timestamps();
         });
