@@ -178,3 +178,29 @@ footer .footer-contact-links a{
 .purple a{
     color:hsl(306, 62%, 55%);
 }
+/* semir */
+.container-books{
+    display:flex;
+    justify-content:space-between;
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-top: 5px solid hsl(300, 4%, 5%);
+
+}
+.container-books h4{
+    display: flex;
+    justify-content: space-around;
+}
+.container-books h5{
+    margin-top: 310px;
+    display: flex;
+    justify-content: space-around;
+}
+.books p{
+    display:flex;
+    flex-direction: column;
+}
+.books{
+    margin-right:20px;
+}
