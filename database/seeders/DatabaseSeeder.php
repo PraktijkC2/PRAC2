@@ -19,9 +19,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //Actors - Goerge Clooney
+        //Actors - George Clooney
         $actors = new Actors();
-        $actors->voornaam = "Goerge";
+        $actors->voornaam = "George";
         $actors->achternaam = "Clooney";
         $actors->info = "George Timothy Clooney (Lexington, Kentucky, 6 mei 1961) is een Amerikaans acteur, regisseur, scenarioschrijver en producent met meer dan dertig filmprijzen en nominaties op zijn naam. Voor de film Syriana won hij een Oscar voor beste mannelijke bijrol. Tevens won hij als producent een Oscar voor beste film voor Argo. Ook kreeg hij Oscarnominaties voor zijn rollen in Michael Clayton en The Descendants, een European Film Award (voor Good Night, and Good Luck) en meerdere Golden Globes (voor Syriana en O Brother, Where Art Thou?).'";
         $actors->image = "/img/george.jpg";
@@ -30,8 +30,8 @@ class DatabaseSeeder extends Seeder
 
         //Actors - Timoty Dalton
         $actors = new Actors();
-        $actors->voornaam = "Goerge";
-        $actors->achternaam = "Clooney";
+        $actors->voornaam = "Timoty";
+        $actors->achternaam = "Dalton";
         $actors->info = "Dalton groeide op in Manchester. Nadat hij zijn school had afgemaakt, ging hij naar het National Youth Theatre. Hij studeerde twee jaar lang aan de Royal Academy of Dramatic Art. In 1966 ging hij naar het Birmingham Repertory Theatre, waar hij hoofdrollen speelde.";
         $actors->image = "/img/timothy.jpg";
         $actors->url = "https://nl.wikipedia.org/wiki/Timothy_Dalton";
@@ -162,7 +162,7 @@ class DatabaseSeeder extends Seeder
         $songs->artiest = "Muse";
         $songs->url = "https://nl.wikipedia.org/wiki/Uprising_(single)";
         $songs->image = "image/undisputed.jpg";
-        $songs->textcolor = "#cc0000";
+        $songs->textcolor = "red";
         $songs->achtergrond = "#317f43";
         $songs->save();
 
