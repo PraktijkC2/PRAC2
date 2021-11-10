@@ -13,6 +13,25 @@
             </div>
             <h5> {{ $boeken->pages }}  blz.</h5>
             <button>Boek kopen!</button>
+            <div class="books-info">
+                <Button onclick ="Toggle1()" id="btnh1" class="btn-like"><i class="fas fa-heart"></i></Button>
+            </div>
         </div>
+        
     </div>
+    
+            <script>
+
+                var btnvar1 = document.getElementById('btnh1');
+
+                function Toggle1(){
+                         if(btnvar1.style.color =="red"){
+                             btnvar1.style.color = "grey"
+                         }
+                         else{
+                             btnvar1.style.color ="red"
+                         }
+                }
+
+            </script>
 @endsection
