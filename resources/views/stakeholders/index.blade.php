@@ -16,14 +16,14 @@
         <h4>Frisdranken</h4>
         @foreach($dranken as $drank)
             @if(strpos($drank, 'frisdranken') !== false)
-                <a href="{{ route('dranken.index', $drank->id) }}">{{ $drank->name }}</a>
+                <a href="{{ route('dranken.index', $drank->categorie) }}">{{ $drank->name }}</a>
             @endif
         @endforeach 
 
         <h4>Warmedranken</h4>
         @foreach($dranken as $drank)
             @if(strpos($drank, 'warmedranken') !== false)
-                <a href="{{ route('dranken.index', $drank->id) }}">{{ $drank->name }}</a>
+                <a href="{{ route('dranken.index', $drank->categorie) }}">{{ $drank->name }}</a>
             @endif
         @endforeach 
     </div>

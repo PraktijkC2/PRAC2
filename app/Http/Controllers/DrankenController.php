@@ -19,9 +19,9 @@ class DrankenController extends Controller
         return view('dranken/index');
     }
 
-    public function listDranken($id)
+    public function listDranken($categorie)
     {
-        $dranken = Dranken::where('id', $id)->first();
+        $dranken = Dranken::where('categorie', $categorie)->get();
         return view('dranken.index', compact('dranken'));
     }
 

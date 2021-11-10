@@ -19,6 +19,7 @@ class CreateBoekenTable extends Migration
             $table->text('omschrijving');
             $table->string('auteur', 255);
             $table->integer('pages');
+            $table->decimal('price', 8, 2);
             $table->string('image');
             $table->timestamps();
         });
