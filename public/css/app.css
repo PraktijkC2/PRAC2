@@ -340,6 +340,7 @@ footer .footer-contact-links a{
     display: grid;
     grid-template-columns: 400px 400px 400px;
     column-gap: 50px;
+    margin-bottom: 150px;
 }
 
 .dranken-content h1{
