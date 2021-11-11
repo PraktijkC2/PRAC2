@@ -1,0 +1,187 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 15px 0px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > .logo h1{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+nav > .links-nav a active{
+    border-top: 5px solid black;
+}
+
+nav > .links-nav a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.03rem;
+    padding: 5px 10px;
+    padding-left: -10px;
+    background-color: black;
+    box-shadow: 4px 4px 0 rgb(2, 2, 0 / 10%);
+}
+
+main{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.datetime-container{ /* Mo 14:47 */
+    margin-top: 20vh;
+    text-align: center;
+    margin-bottom: 25vh;
+}
+
+.datetime-container h1{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    text-transform: capitalize;
+}
+
+.datetime-container h2{
+    margin-top: 20px;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.datetime-container h2 span{
+    color: white;
+    padding: 5px 10px;
+    background-color: black;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer h1{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer .footer-contact-links{
+    margin-top: 1px;
+}
+
+footer .footer-contact-links a{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.purple{
+    border-top: 3px solid hsl(306, 62%, 55%);
+}
+
+.map-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.extra-info h2{
+    font-size: 30px;
+}
+
+.extra-info p{
+    font-size: 20px;
+}
+
+/* Ilyas - 01-11-2021 */
+ /* Mohamed - 01-11-2021  */
+
+.stakeholders, .library{
+	display: flex;
+    margin-bottom: 300px;
+}
+
+.stakeholders > .box, .library > .box{
+    flex: 1;
+	min-height: auto;
+}
+
+.stakeholders .box, .library .box {
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.stakeholders > .box a, .library > .box a{
+	display: flex;
+    font-size: 15px;
+    padding: 5px 0px;
+    margin-right: 5px;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+}
+
+.stakeholders > .box h2, .library > .box h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.stakeholders> .cyan, .library > .cyan {
+    margin-right: 20px;
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.stakeholders > .red, .library > .red {
+    margin-right: 20px;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.stakeholders > .blue {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.library > .blue {
+    margin-right: 20px;
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.cyan a{
+    color:hsl(180, 62%, 55%);
+}
+.red a{
+    color:hsl(0, 78%, 62%);
+}
+.blue a{
+    color:hsl(212, 86%, 64%);
+}
+.purple a{
+    color:hsl(306, 62%, 55%);
+}

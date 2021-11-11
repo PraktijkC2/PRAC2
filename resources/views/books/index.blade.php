@@ -12,6 +12,7 @@
                 <p>{{ $boeken->omschrijving }}</p>
             </div>
             <h5> {{ $boeken->pages }}  blz.</h5>
+            <h5 style="margin:0;"> {{ $boeken->price }} EURO</h5>
             <button>Boek kopen!</button>
             <div class="books-info">
                 <Button onclick ="Toggle1()" id="btnh1" class="btn-like"><i class="fas fa-heart"></i></Button>

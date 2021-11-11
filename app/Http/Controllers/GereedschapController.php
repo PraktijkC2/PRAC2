@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Gereedschap;
 use App\Models\Stakeholders;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GereedschapController extends Controller
 {
@@ -15,14 +16,24 @@ class GereedschapController extends Controller
      */
     public function index()
     {
-        $gereedschap = Gereedschap::All();
-        return view('gereedschap/index');
+        if(Auth::check()){
+            $gereedschap = Gereedschap::All();
+            return view('gereedschap/index');
+        }
+        else{
+            return view('auth.login');
+        }
     }
 
     public function listGereedschap($id)
     {
-        $gereedschap = Gereedschap::where('id', $id)->first();
-        return view('gereedschap.index', compact('gereedschap'));
+        if(Auth::check()){
+            $gereedschap = Gereedschap::where('id', $id)->first();
+            return view('gereedschap.index', compact('gereedschap'));
+        }
+        else{
+            return view('auth.login');
+        }
     }
 
     /**

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Songs;
 use App\Models\Library;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SongsController extends Controller
 {
@@ -15,14 +16,24 @@ class SongsController extends Controller
      */
     public function index()
     {
-        $songs = Songs::all();
-        return view('songs/index');
+        if(Auth::check()){
+            $songs = Songs::all();
+            return view('songs/index');
+        }
+        else{
+            return view('auth.login');
+        }  
     }
 
     public function listSong($id)
     {
-        $songs = Songs::where('id', $id)->first();
-        return view('songs.index', compact('songs'));
+        if(Auth::check()){
+            $songs = Songs::where('id', $id)->first();
+            return view('songs.index', compact('songs'));
+        }
+        else{
+            return view('auth.login');
+        }  
     }
     /**
      * Show the form for creating a new resource.

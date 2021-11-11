@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Boeken;
 use App\Models\Library;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BoekenController extends Controller
 {
@@ -15,14 +16,24 @@ class BoekenController extends Controller
      */
     public function index()
     {
-        $boeken = Boeken::all();
-        return view('books/index');
+        if(Auth::check()){
+            $boeken = Boeken::all();
+            return view('books/index');
+        }
+        else{
+            return view('auth.login');
+        } 
     }
 
     public function listBoek($id)
     {
-        $boeken = Boeken::where('id', $id)->first();
-        return view('books.index', compact('boeken'));
+        if(Auth::check()){
+            $boeken = Boeken::where('id', $id)->first();
+            return view('books.index', compact('boeken'));
+        }
+        else{
+            return view('auth.login');
+        }  
     }
     /**
      * Show the form for creating a new resource.

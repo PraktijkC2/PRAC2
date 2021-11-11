@@ -6,6 +6,7 @@ use App\Models\Dranken;
 use App\Models\Gereedschap;
 use App\Models\Stakeholders;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class StakeholdersController extends Controller
 {
@@ -16,11 +17,16 @@ class StakeholdersController extends Controller
      */
     public function index()
     {
-        $dranken = Dranken::all();
-        $gereedschap = Gereedschap::all();
-        return view('stakeholders/index')
-        ->with(compact('dranken'))
-        ->with(compact('gereedschap'));
+        if(Auth::check()){
+            $dranken = Dranken::all();
+            $gereedschap = Gereedschap::all();
+                return view('stakeholders/index')
+                ->with(compact('dranken'))
+                ->with(compact('gereedschap'));
+            }
+        else{
+            return view('auth.login');
+        }  
     }
 
     /**

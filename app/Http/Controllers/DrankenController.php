@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Dranken;
 use App\Models\Stakeholders;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DrankenController extends Controller
 {
@@ -15,14 +16,24 @@ class DrankenController extends Controller
      */
     public function index()
     {
-        $dranken = Dranken::all();
-        return view('dranken/index');
+        if(Auth::check()){
+            $dranken = Dranken::all();
+            return view('dranken/index');
+        }
+        else{
+            return view('auth.login');
+        } 
     }
 
     public function listDranken($categorie)
     {
-        $dranken = Dranken::where('categorie', $categorie)->get();
-        return view('dranken.index', compact('dranken'));
+        if(Auth::check()){
+            $dranken = Dranken::where('categorie', $categorie)->get();
+            return view('dranken.index', compact('dranken'));
+        }
+        else{
+            return view('auth.login');
+        } 
     }
 
     /**

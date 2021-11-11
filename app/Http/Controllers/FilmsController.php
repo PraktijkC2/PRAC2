@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Films;
 use App\Models\Library;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FilmsController extends Controller
 {
@@ -15,14 +16,24 @@ class FilmsController extends Controller
      */
     public function index()
     {
-        $films = Films::All();
-        return view('films/index');
+        if(Auth::check()){
+            $films = Films::All();
+            return view('films/index');
+        }
+        else{
+            return view('auth.login');
+        }
     }
 
     public function listFilm($id)
     {
-        $films = Films::where('id', $id)->first();
-        return view('films.index', compact('films'));
+        if(Auth::check()){
+            $films = Films::where('id', $id)->first();
+            return view('films.index', compact('films'));
+        }
+        else{
+            return view('auth.login');
+        }
     }
     /**
      * Show the form for creating a new resource.

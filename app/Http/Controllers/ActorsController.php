@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Actors;
 use App\Models\Library;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ActorsController extends Controller
 {
@@ -15,14 +16,24 @@ class ActorsController extends Controller
      */
     public function index()
     {
-        $actors = Actors::all();
-        return view('actors/index');
+        if(Auth::check()){
+            $actors = Actors::all();
+            return view('actors/index');
+        }
+        else{
+            return view('auth.login');
+        } 
     }
 
     public function listActor($id)
     {
-        $actors = Actors::where('id', $id)->first();
-        return view('actors.index', compact('actors'));
+        if(Auth::check()){
+            $actors = Actors::where('id', $id)->first();
+            return view('actors.index', compact('actors'));
+        }
+        else{
+            return view('auth.login');
+        }
     }
 
     /**

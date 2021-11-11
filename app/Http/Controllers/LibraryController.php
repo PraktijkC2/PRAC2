@@ -8,6 +8,7 @@ use App\Models\Actors;
 use App\Models\Boeken;
 use App\Models\Library;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 
 class LibraryController extends Controller
@@ -19,15 +20,20 @@ class LibraryController extends Controller
      */
     public function index()
     {
-        $songs = Songs::all();
-        $films = Films::all();
-        $actors = Actors::all();
-        $boeken = Boeken::all();
-        return view('library/index')
-        ->with(compact('songs'))
-        ->with(compact('films'))
-        ->with(compact('actors'))
-        ->with(compact('boeken'));
+        if(Auth::check()){
+            $songs = Songs::all();
+            $films = Films::all();
+            $actors = Actors::all();
+            $boeken = Boeken::all();
+            return view('library/index')
+            ->with(compact('songs'))
+            ->with(compact('films'))
+            ->with(compact('actors'))
+            ->with(compact('boeken'));
+        }
+        else{
+            return view('auth.login');
+        } 
     }
 
     /**
