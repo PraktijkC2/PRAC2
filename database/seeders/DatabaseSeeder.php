@@ -76,20 +76,52 @@ class DatabaseSeeder extends Seeder
         $boeken->save();
 
 
-        //Dranken - fris dranken
+        //Dranken - Cola
         $dranken = new Dranken();
-        $dranken->name = "frisdranken";
-        $dranken->categorie = "Pagina over fris dranken";
-        $dranken->description = "Deze pagina is voor fris dranken";
+        $dranken->name = "Cola";
+        $dranken->categorie = "frisdranken";
+        $dranken->description = "Deze pagina is voor cola";
         $dranken->url = "www.coca-cola.nl";
         $dranken->save();
 
-        //Dranken - warme dranken
+        //Dranken - Koffie
         $dranken = new Dranken();
-        $dranken->name = "warmedranken";
-        $dranken->categorie = "Pagina over warme dranken";
-        $dranken->description = "Deze pagina is voor warme dranken";
+        $dranken->name = "Koffie";
+        $dranken->categorie = "warmedranken";
+        $dranken->description = "Deze pagina is voor koffie";
         $dranken->url = "www.nespresso.nl";
+        $dranken->save();
+
+         //Dranken - Sinas
+         $dranken = new Dranken();
+         $dranken->name = "Sinas";
+         $dranken->categorie = "frisdranken";
+         $dranken->description = "Deze pagina is voor sinas";
+         $dranken->url = "https://www.cocacolanederland.nl/onze-merken-en-verhalen/fanta";
+         $dranken->save();
+
+          //Dranken - 7Up
+        $dranken = new Dranken();
+        $dranken->name = "7Up";
+        $dranken->categorie = "frisdranken";
+        $dranken->description = "Deze pagina is voor 7Up.";
+        $dranken->url = "https://7up.nl/";
+        $dranken->save();
+
+         //Dranken - Thee
+         $dranken = new Dranken();
+         $dranken->name = "Thee";
+         $dranken->categorie = "warmedranken";
+         $dranken->description = "Deze pagina is voor thee.";
+         $dranken->url = "https://www.lipton.nl/home.html";
+         $dranken->save();
+
+          //Dranken - Latte
+        $dranken = new Dranken();
+        $dranken->name = "Latte";
+        $dranken->categorie = "warmedranken";
+        $dranken->description = "Deze pagina is voor latte.";
+        $dranken->url = "https://www.coffeefresh.nl/koffie-kennis/caffe-latte";
         $dranken->save();
 
         //Films
@@ -112,7 +144,7 @@ class DatabaseSeeder extends Seeder
          $gereedschap->name = "Handzagen";
          $gereedschap->categorie = "zagen";
          $gereedschap->description = "Zagen is een verspanende bewerking die met de hand of met een machine kan worden uitgevoerd. Het hiervoor gebruikte gereedschap of machine is voorzien van een zaagblad. Met de tanden hiervan, die snijkanten hebben, kan een snede in het te bewerken materiaal worden gemaakt. Meestal wordt het materiaal doorgesneden. De verplaatsing van de zaag door het materiaal noemen we de aanzet of de voeding. Het zaagblad voert de snijbeweging uit, de voedingsbeweging wordt teweeg gebracht door druk uit te oefenen op het zaagblad, of op het te bewerken materiaal.";
-         $gereedschap->url = "https://nl.wikipedia.org/wiki/Hamer_(gereedschap)";
+         $gereedschap->url = "https://nl.wikipedia.org/wiki/Handzaag";
          $gereedschap->save();  
 
          //Gereedschap - Schroevendraaiers
