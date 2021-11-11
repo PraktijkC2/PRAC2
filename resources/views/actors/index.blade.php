@@ -11,7 +11,7 @@
             <div class="actor-info">
                 <p>{{ $actors->info }}</p>
                 <div class="actor-actions">
-                    <a href="{{ $actors->url }}">Meer info</a>
+                    <a target="_blank" href="{{ $actors->url }}">Meer info</a>
                     <Button class="like" onclick ="Toggle1()" id="btnh1" class="btn-like"><i class="fas fa-heart"></i></Button>
                 </div>
             </div>

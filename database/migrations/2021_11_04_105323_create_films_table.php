@@ -17,7 +17,7 @@ class CreateFilmsTable extends Migration
             $table->id();
             $table->string('titel', 255);
             $table->text('samenvatting');
-            $table->string('director', 255);
+            $table->string('image');
             $table->timestamps();
         });
     }

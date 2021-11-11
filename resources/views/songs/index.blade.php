@@ -10,7 +10,7 @@
                     <p style="line-height:25px;">{{ $songs->songtekst }}</p>
                 </div>
                 <div class="songs-actions">
-                    <a href="{{ $songs->url }}">Meer Info</a>
+                    <a target="_blank" href="{{ $songs->url }}">Meer Info</a>
                     <Button class="like" onclick ="Toggle1()" id="btnh1" class="btn-like"><i class="fas fa-heart"></i></Button>
                 </div>
             </div>
