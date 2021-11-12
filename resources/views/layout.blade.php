@@ -29,14 +29,15 @@
                             <a style="margin-right: 5px;" href="/" class="active"><i class="fas fa-home"></i> Homepagina</a>
                             <a style="margin-right: 5px;" href="/library"><i class="fas fa-book-reader"></i> My Library</a>
                             <a style="margin-right: 5px;" href="/informatie"><i class="far fa-question-circle"></i> Informatie</a>
-                            <a style="margin-right: 10px;" href="/stakeholders"><i class="fas fa-coffee"></i> Producten</a>
-                            <form method="POST" action="{{ route('logout') }}">@csrf
-                                <a href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">{{ __('Log Out') }}</a>
+                            <a style="margin-right: 5px;" href="/stakeholders"><i class="fas fa-coffee"></i> Producten</a>
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <a href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();"><i class="fas fa-sign-out-alt"></i> {{ __('Log Out') }}</a>
                             </form>
                             @else
-                                <a href="{{ route('login') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{ __('Login') }}</a>
-                        @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="no-underline hover:underline text-sm font-normal text-teal-800 uppercase">{{ __('Register') }}</a>
+                                <a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> {{ __('Login') }}</a>
+                             @if (Route::has('register'))
+                                <a href="{{ route('register') }}"><i class="fas fa-user-plus"></i> {{ __('Register') }}</a>
                             @endif
                             @endauth
                         @endif
