@@ -9,7 +9,7 @@
                         <div class="frisdrankenbox">
                             <h1>{{ $drank->name }}</h1>
                             <p>Tijdens de Olympische Spelen van 1928 was Coca-Cola voor het eerst in Nederland verkrijgbaar. Het eerste verkooppunt was een kraampje op het terrein van het Olympisch Stadion in Amsterdam. In 1930 werd te Amsterdam de 'N.V. Nederlandse Coca-Cola Maatschappij' opgericht, waarmee deze merklimonade haar intrede deed op de Nederlandse markt. In eerste instantie was er een ander frisdrankmerk in Nederland, Noca Nola. Pas nadat Noca Nola was overgenomen door Coca-Cola (in 1937), was de gehele Nederlandse markt beschikbaar.</p>
-                            <a href="http://127.0.0.1:8000/films/1"> Roger Moore -> </a>
+                            <a href="/films/1"> Roger Moore -> </a>
                         </div>
                     @endif
                 @endforeach
@@ -43,7 +43,7 @@
                         <div class="warmedrankenbox">
                             <h1>{{ $drank->name }}</h1>
                             <p>Koffie is een meestal warm genuttigde drank, die wordt bereid op basis van water en gedroogde en gebrande pitten van de koffieplant (Coffea spp.) die vanwege hun vorm koffiebonen worden genoemd. Koffie bevat het stimulerende middel cafeïne.[1][2] De meeste soorten in het geslacht Coffea komen van nature voor in tropisch Afrika en op de eilanden in de Indische Oceaan. Ze vinden hun oorsprong in Ethiopië, Jemen en Soedan. </p>
-                            <a href="http://127.0.0.1:8000/actors/1"> George Clooney -> </a>
+                            <a href="/actors/1"> George Clooney -> </a>
                         </div>
                     @endif
                 @endforeach
