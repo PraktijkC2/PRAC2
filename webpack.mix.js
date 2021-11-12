@@ -24,3 +24,8 @@ if (mix.inProduction()) {
   mix
     .version();
 }
+
+mix.styles([
+  'resources/css/app.css',
+  'public/css/app.css',  require('tailwindcss'),
+]);

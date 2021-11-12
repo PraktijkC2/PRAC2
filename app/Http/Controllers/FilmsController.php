@@ -16,7 +16,8 @@ class FilmsController extends Controller
      */
     public function index()
     {
-        if(Auth::check()){
+        $role=Auth::user()->role;
+        if($role==1){
             $films = Films::All();
             return view('films/index');
         }
@@ -27,7 +28,8 @@ class FilmsController extends Controller
 
     public function listFilm($id)
     {
-        if(Auth::check()){
+        $role=Auth::user()->role;
+        if($role==1){
             $films = Films::where('id', $id)->first();
             return view('films.index', compact('films'));
         }

@@ -21,7 +21,7 @@
             <header>
                 <nav>
                     <div class="logo">
-                    <a href="/"><h1>code<<camp><i class="fas fa-campground"></i></h1></a>
+                    <a href="/"><h1>code<<camp><i class="fas fa-campground"></i>></h1></a>
                     </div>
                     <div class="links-nav">
                     @if(Route::has('login'))
